@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tesseract.decision_tree_analysis.WeatherFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Outlook"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/outlook"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+       <!-- <co.ceryle.radiorealbutton.library.RadioRealButtonGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rrbg_bottomLineSize="0dp"
+            app:rrbg_dividerColor="@color/black"
+            app:rrbg_dividerSize="1dp"
+            app:rrbg_selectorColor="@color/red_700"
+            app:rrbg_selectorSize="6dp"
+            app:rrbg_radius="10dp"
+            app:rrbg_shadow="true"
+            app:rrbg_shadowElevation="2dp"
+            app:rrbg_shadowMargin="3dp"
+            app:rrbg_animateTexts_enter="overshoot"
+            app:rrbg_animateImages_enter="overshoot">
+            <co.ceryle.radiorealbutton.library.RadioRealButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_image="@drawable/checked"
+                app:rrb_imageHeight="36dp"
+                app:rrb_imageWidth="36dp"
+                app:rrb_ripple="true"
+                app:rrb_rippleColor="@color/black"
+
+                app:rrb_textColor="@color/black"/>
+            <co.ceryle.radiorealbutton.library.RadioRealButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_image="@drawable/cancel"
+                app:rrb_imageHeight="36dp"
+                app:rrb_imageWidth="36dp"
+                app:rrb_ripple="true"
+                app:rrb_rippleColor="@color/black"
+                app:rrb_textColor="@color/black"/>
+        </co.ceryle.radiorealbutton.library.RadioRealButtonGroup>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Windy Status"
+            android:textColor="#000000"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/windy"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:hint="Enter Humidity"
+            android:textColorHint="#f20d0d"
+            android:inputType="numberDecimal"
+            android:id="@+id/humidity"
+            android:textColor="#0d47a1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:elevation="5dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/genarate"
+            android:text="Result"
+            android:layout_gravity="center_horizontal"
+            android:background="#1a237e"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

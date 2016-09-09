@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tesseract.decision_tree_analysis.IrisFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dsb_min="0"
+        app:dsb_max="200"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="18dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:hint="Enter Humidity"
+            android:textColorHint="#f20d0d"
+            android:inputType="numberDecimal"
+            android:id="@+id/petellenth"
+            android:textColor="#0d47a1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:hint="Enter Humidity"
+            android:textColorHint="#f20d0d"
+            android:inputType="numberDecimal"
+            android:id="@+id/petelwedth"
+            android:textColor="#0d47a1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:hint="Enter Humidity"
+            android:textColorHint="#f20d0d"
+            android:inputType="numberDecimal"
+            android:id="@+id/sepallength"
+            android:textColor="#0d47a1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:hint="Enter Humidity"
+            android:textColorHint="#f20d0d"
+            android:inputType="numberDecimal"
+            android:id="@+id/sepalwidth"
+            android:textColor="#0d47a1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:elevation="5dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/genarate"
+            android:text="Result"
+            android:layout_gravity="center_horizontal"
+            android:background="#1a237e"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:padding="5dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
