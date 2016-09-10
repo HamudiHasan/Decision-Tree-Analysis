@@ -7,12 +7,7 @@
     tools:context="com.tesseract.decision_tree_analysis.IrisFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:dsb_min="0"
-        app:dsb_max="200"
-        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_margin="18dp"
@@ -24,7 +19,7 @@
             android:textSize="20sp"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:hint="Enter Humidity"
+            android:hint="Enter Petellenth"
             android:textColorHint="#f20d0d"
             android:inputType="numberDecimal"
             android:id="@+id/petellenth"
@@ -35,7 +30,7 @@
             android:textSize="20sp"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:hint="Enter Humidity"
+            android:hint="Enter Petelwedth"
             android:textColorHint="#f20d0d"
             android:inputType="numberDecimal"
             android:id="@+id/petelwedth"
@@ -46,7 +41,7 @@
             android:textSize="20sp"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:hint="Enter Humidity"
+            android:hint="Enter Sepallength"
             android:textColorHint="#f20d0d"
             android:inputType="numberDecimal"
             android:id="@+id/sepallength"
@@ -57,7 +52,7 @@
             android:textSize="20sp"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:hint="Enter Humidity"
+            android:hint="Enter Sepalwidth"
             android:textColorHint="#f20d0d"
             android:inputType="numberDecimal"
             android:id="@+id/sepalwidth"

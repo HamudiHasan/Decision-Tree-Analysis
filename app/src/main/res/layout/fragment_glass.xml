@@ -1,13 +1,113 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tesseract.decision_tree_analysis.GlassFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_margin="18dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/etmargin"
+               android:hint="Magnesium"
+               android:textColorHint="#f20d0d"
+               android:inputType="numberDecimal"
+               android:id="@+id/mg"
+               android:textColor="#0d47a1"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/etmargin"
+               android:hint="Aluminum"
+               android:textColorHint="#f20d0d"
+               android:inputType="numberDecimal"
+               android:id="@+id/al"
+               android:textColor="#0d47a1"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/etmargin"
+               android:hint="Silicon"
+               android:textColorHint="#f20d0d"
+               android:inputType="numberDecimal"
+               android:id="@+id/si"
+               android:textColor="#0d47a1"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/etmargin"
+               android:hint="Potassium"
+               android:textColorHint="#f20d0d"
+               android:inputType="numberDecimal"
+               android:id="@+id/k"
+               android:textColor="#0d47a1"/>
 
-</FrameLayout>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/etmargin"
+               android:hint="Calcium"
+               android:textColorHint="#f20d0d"
+               android:inputType="numberDecimal"
+               android:id="@+id/ca"
+               android:textColor="#0d47a1"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/etmargin"
+               android:hint="Barium"
+               android:textColorHint="#f20d0d"
+               android:inputType="numberDecimal"
+               android:id="@+id/ba"
+               android:textColor="#0d47a1"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:layout_weight="1"
+               android:layout_margin="@dimen/etmargin"
+               android:hint="Iron"
+               android:textColorHint="#f20d0d"
+               android:inputType="numberDecimal"
+               android:id="@+id/fe"
+               android:textColor="#0d47a1"/>
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="25sp"
+               android:elevation="5dp"
+               android:gravity="center_horizontal"
+               android:id="@+id/genarate"
+               android:text="Result"
+               android:layout_gravity="center_horizontal"
+               android:background="#1a237e"
+               android:textAlignment="center"
+               android:textColor="#ffffff"
+               android:textStyle="bold"
+               android:padding="5dp"
+               />
+
+       </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>

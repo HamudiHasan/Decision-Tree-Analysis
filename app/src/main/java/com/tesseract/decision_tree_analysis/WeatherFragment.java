@@ -72,29 +72,35 @@ public class WeatherFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Weather weather=new Weather();
-                weather.setOutlook(arrayList.get(outlook.getSelectedIndex()));
-                weather.setHumidity(Double.parseDouble(humidity.getText().toString()));
-                if(windy.getSelectedIndex()==0)
-                    weather.setWindy(Boolean.TRUE);
-                else weather.setWindy(Boolean.FALSE);
-                if(weather.getPlayStatus())
-                {
-                    //popup yes
-                    showDialog("No Problem ! You can Play");
+                try{
+                    weather.setOutlook(arrayList.get(outlook.getSelectedIndex()));
+                    weather.setHumidity(Double.parseDouble(humidity.getText().toString()));
+                    if(windy.getSelectedIndex()==0)
+                        weather.setWindy(Boolean.TRUE);
+                    else weather.setWindy(Boolean.FALSE);
+                    if(weather.getPlayStatus())
+                    {
+                        //popup yes
+                        showDialog("No Problem ! You can Play","Play Status");
 
+                    }
+                    else
+                    {
+                        //no popup
+                        showDialog("Oh No there are some problem! Please Stay Home ","Play Status");
+
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    //no popup
-                    showDialog("Oh No there are some problem! Please Stay Home ");
-
+                    showDialog("Please fill all info","Error");
                 }
             }
         });
 
         return view;
     }
-    void showDialog(String message)
+    void showDialog(String message,String title)
     {
         final Dialog dialog = new Dialog(WeatherFragment.this.getContext());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -105,6 +111,9 @@ public class WeatherFragment extends Fragment {
         // set the custom dialog components - text, image and button
         TextView status = (TextView) dialog.findViewById(R.id.status);
         status.setText(message);
+
+        TextView dtitle = (TextView) dialog.findViewById(R.id.title);
+        dtitle.setText(title);
 
         if(dialog!=null)
             dialog.show();
